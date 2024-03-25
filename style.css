@@ -1,0 +1,883 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy-Medium'), url('Gilroy-Medium.ttf') format('truetype');
+}
+.conteiner{
+    max-width: 1485px;
+    margin: 0 auto;
+}
+body {
+    margin: 0;
+}
+.hamburger_menu{
+    display: flex;
+    align-items: center;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 34px;
+}
+.first{
+    height: 1480px;
+    background-image: url(картинки/bg1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 69px;
+}
+#menu__toggle {
+    opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+}
+.menu__btn {
+    position: relative;
+    padding-top: 33px;
+    left: 36px;
+    width: 34px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+  /* .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  } */
+/* .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+} */
+/* .menu__item:hover {
+    /* background-color: #CFD8DC;
+} */
+.menu{
+    display: flex;
+    color: #FFFFFF;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 431px;
+    justify-content: space-around;
+    margin-left: 48px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 19.72px;
+    margin-top: 10px;
+    font-family: 'Gilroy';
+}
+.navigation{
+    cursor: pointer;
+}
+.navigation:hover {
+    color: rgba(199, 178, 158, 1);
+}
+.contacts{
+    cursor: pointer;
+}
+.contacts:hover{
+    color: rgba(199, 178, 158, 1);
+}
+.priority_office{
+    cursor: pointer;
+}
+.priority_office:hover{
+    color: rgba(199, 178, 158, 1);
+}
+.logo{
+    padding-top: 5px;
+}
+.search{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.eye{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.exampleone {
+    -webkit-appearance: menulist-button;
+    -moz-appearance: menulist-button;
+    appearance: menulist-button;
+}
+.right_part{
+    display: flex;
+    width: 400px;
+    height: 60px;
+    margin-right: 36px;
+    justify-content: space-between;
+}
+.search{
+    padding-top: 16px;
+}
+.eye{
+    padding-top: 16px;
+}
+.but{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+.internet_bank{
+    appearance: auto;
+    width: 235px;
+    height: 60px;
+    text-align: center;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 1);
+    justify-content: rgba(255, 255, 255, 1);
+    color: #FFFFFF;
+    text-align: initial;
+    padding-left: 10px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.41px;
+}
+.textik{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding-top: 219px;
+    height: 217px;
+    justify-content: space-between;
+    font-family: 'Gilroy';
+}
+.invest_products{
+    font-weight: 400;
+    line-height: 131.7%;
+    font-size: 18px;
+    opacity: 0.8999999761581421;
+    color: #C4C4C8;
+}
+.investetiv_products{
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: normal;
+}
+.for_years{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 131.7%;
+    opacity: 0.8999999761581421;
+}
+.carousel1{
+    display: flex;
+    margin-top: 482px;
+    font-family: 'Gilroy';
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.carousel1 span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.firstnamecard:before, .secondnamecard:before, .thirdnamecard:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #BBA897;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.card1{
+    width: 440px;
+    position: relative;
+}
+.card2{
+    width: 414px;
+    position: relative;
+}
+.card3{
+    width: 406px;
+    opacity: 50%;
+    position: relative;
+}
+.firstnamecard{
+    margin-bottom: 16px;
+    color: #BBA897;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.secondnamecard{
+    margin-bottom: 16px;
+    color: #BBA897;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.thirdnamecard{
+    margin-bottom: 16px;
+    color: #BBA897;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+span1, span3, span5{
+    color: #BBA897;
+    font-weight: 700;
+}
+span2, span4, span6{
+    color: #29355C;
+}
+/* .firstnamecard::after{
+    content: " ";
+    background: #BBA897;
+    width: 227px;
+    height: 1px;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 27px;
+}
+.secondnamecard::after{
+    content: " ";
+    background: #BBA897;
+    width: 185px;
+    height: 1px;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 27px;
+}
+.thirdnamecard::after{
+    content: " ";
+    background: #BBA897;
+    width: 227px;
+    height: 1px;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 27px;
+} */
+.arrow{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    height: 59px;
+    position: absolute;
+    top: 1059px;
+    right: 20px;
+
+}
+.arrow2{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    height: 59px;
+    position: absolute;
+    right: 20px;
+    top: 114px;
+    /* margin-top: 114px;
+    margin-right: 108px; */
+}
+.withSPB{
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    width: 350px;
+    height: 73px;
+    background-color: #C7B29E;
+    margin-top: 40px;
+}
+.withSPBtext{
+    font-family: 'Gilroy';
+    line-height: 66px;
+    color:#FFF;
+    font-weight: 300;
+    display: flex;
+    position: absolute;
+    text-align: center;
+}
+.picture{
+    margin-top: 26px;
+    margin-left: 283px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+}
+.save{
+    font-family: 'Gilroy';
+    color: #323242;
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 96px;
+}
+.we{
+    margin-top: 20px;
+    color: #323242;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: 'Gilroy';
+}
+
+
+.second{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #F6F6F7;
+    height: 417px;
+    font-family: 'Gilroy';
+    align-items: flex-start;
+    align-content: space-around;
+    
+}
+.advantages{
+    display: flex;
+    padding-right: 240px;
+    padding-right: 240px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.icontext{
+    color: #13162E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 75px;
+    margin-left: 93px;
+}
+.icon{
+    position: absolute;
+    margin-right: 22px;
+    margin-top: 52px;
+}
+.fourthicon{
+    width: 400px;
+}
+.secondicon{
+    width: 316px;
+}
+.fifthicon{
+    width: 375px;
+}
+.seventhicon{
+    width: 292px;
+}
+
+.third{
+    height: 2611px;
+    background-image: url(картинки/sky_1.png);
+    background-position: right -295px;
+    background-repeat: no-repeat;
+}
+.sky{
+    /* background-image: url(картинки/sky_2.png);
+    background-position: right 542px;
+    background-repeat: no-repeat; */
+    position: absolute;
+    right: 0;
+    margin-top: 866px;
+    overflow: hidden;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.boxes_third{
+    display: flex;
+    flex-direction: column;
+}
+.firstbox{
+    width: 708px;
+    height: 1074px;
+    background-color: #29355C;
+    font-family: 'Gilroy';
+    padding-left: 37px;
+    /* background: url(),url(); */
+    /* подсмотреть в third */
+}
+.dov{
+    color: #F3F3F5;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 416px;
+    width: 295px;
+}
+.boxtext1{
+    color: #F3F3F5;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    margin-top: 30px;
+    width: 522px;
+}
+.curcle{
+    position: absolute;
+}
+.curcletext{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    position: relative;
+    margin-top: 13px;
+    margin-left: 59px;
+}
+.grade{
+    display: flex;
+    margin-top: 39px;
+    flex-direction: column;
+}
+.secondbox{
+    width: 702px;
+    height: 537px;
+    border: 1px solid #C7B29E;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-left: 28px;
+    font-family: 'Gilroy';
+    z-index: 4;
+}
+.invest{
+    color: #4C4C5A;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 57px;
+}
+.box2text{
+    width: 648px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    margin-top: 32px;
+}
+.curcletext2{
+    color: #4C4C5A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    margin-left: 59px;
+    margin-top: 13px;
+}
+.thirdbox{
+    width: 732px;
+    height: 507px;
+    background: #BBA897;
+    /* position: absolute;
+    margin-top: 567px;
+    margin-left: 748px; */
+    padding-left: 43px;
+    font-family: 'Gilroy';
+    margin-top: 15px;
+}
+.struct{
+    color: #FFF;
+    font-size: 40px;
+    font-size: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 57px;
+}
+.box3text{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    margin-top: 32px;
+}
+.scary{
+    margin-top: 82px;
+    color: #323242;
+    font-family: 'Gilroy';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 499px;
+}
+.with{
+    margin-top: 21px;
+    font-family: 'Gilroy';
+    color: #84848E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+.carousel2{
+    position: absolute; /*ВООООООООООООТ Из-за этого оно выходит за контейнер!!!!!!*/
+    height: 287px;
+    margin-top: 43px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-family: 'Gilroy';
+    width: 100%;
+    overflow: hidden;
+}
+.card4{
+    width: 556px;
+    border-radius: 10px;
+    background-image: url(картинки/card4&6.png);
+}
+.textcard4{
+    margin-top: 121px;
+    color: #C7B29E;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: normal;
+    width: 313px;
+    margin-left: 34px;
+}
+.textcard4_2{
+    margin-top: 24px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 210%;
+    margin-left: 34px;
+}
+.card5{
+    width: 556px;
+    border-radius: 10px;
+    background-image: url(картинки/card5.png);
+    margin-left: 24px;
+}
+.textcard5{
+    margin-top: 121px;
+    color: #C7B29E;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: normal;
+    width: 313px;
+    margin-left: 34px;
+}
+.textcard5_2{
+    margin-top: 24px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 210%;
+    margin-left: 34px;
+}
+.card6{
+    width: 556px;
+    margin-left: 24px;
+    border-radius: 10px;
+    background-image: url(картинки/card4&6.png);
+    opacity: 0.5;
+}
+.textcard6{
+    margin-top: 121px;
+    color: #C7B29E;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: normal;
+    width: 313px;
+    margin-left: 34px;
+}
+.textcard6_2{
+    margin-top: 24px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 210%;
+    margin-left: 34px;
+}
+.cardtext4{
+    position: absolute;
+}
+.cardtext5{
+    position: absolute;
+}
+.arrowcard{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    margin-top: 235px;
+    margin-right: 34px;
+    cursor: pointer;
+}
+.rectangle{
+    height: 266px;
+    width: 1367px;
+    border: 1px solid #C7B29E;
+    margin-top: 419px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gilroy';
+}
+.join{
+    width: 615px;
+    color: #323242;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    padding-top: 52px;
+}
+.suggestion{
+    cursor: pointer;
+    display: flex;
+    height: 64px;
+    width: 281.72516px;
+    background-color: #D0BEAD;
+    justify-content: space-evenly;
+    position: absolute;
+    align-items: center;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFF;
+    width: 354px;
+    height: 64px;
+    position: absolute;
+    margin-top: 228px;
+}
+.ooo{
+    margin-top: 110px;
+    width: 1368px;
+    color: #ADADB3;
+    font-family: 'Gilroy';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+.footer{
+    /* height: 752px; */
+    background-image: url(картинки/footer.jpg);
+    position: relative;
+    block-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.buttons_1{
+    color: #FFF;
+    font-family: 'Gilroy';
+    display: flex;
+    justify-content: flex-start;
+}
+.group_1,.group_2,.group_3,.group_4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 85px;
+}
+.group_1{
+    padding-right: 101px;
+}
+.group_2{
+    padding-right: 75px;
+}
+.group_3{
+    padding-right: 106px;
+}
+.firstphone,.secondphone{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+}
+.freecall,.inMoscow,.internet-bank,.download{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+}
+.allContacts,.location,.feedback,.aboutbank,.career,.money,.news,.quality,.open,.disclosure,.Worldwide,.privaty,.bisness,.corporate,.on-line,.apple,.android{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    cursor: pointer;
+}
+.allContacts,.privaty,.career,.money,.news,.quality,.open,.disclosure,.Worldwide,.secondphone{
+    margin-top: 20px;
+}
+.location{
+    padding-top: 33px;
+    position: relative;
+    padding-left: 30px;
+}
+.feedback{
+    padding-top: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+.bisness,.corporate,.on-line{
+    padding-top: 21px;
+    position: relative;
+    padding-left: 30px;
+}
+.apple{
+    padding-top: 16px;
+    position: relative;
+    padding-left: 30px;
+}
+.appleimg{
+    position: absolute;
+    padding-top: 37px;
+}
+.android{
+    padding-top: 12px;
+    position: relative;
+    padding-left: 30px;
+}
+.androidimg{
+    position: absolute;
+    padding-top: 72px;
+}
+.internet-bank{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.download{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.disclosure{
+    width: 254px;
+}
+.privatyimg{
+    position: absolute;
+    padding-top: 41px;
+}
+.privaty{
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.bisnessimg{
+    position: absolute;
+    padding-top: 86px;
+}
+.corporateimg{
+    position: absolute;
+    padding-top: 131px;
+}
+.on-lineimg{
+    position: absolute;
+    padding-top: 176px;
+}
+.locationimg{
+    position: absolute;
+    padding-top: 190px;
+}
+.feedbackimg{
+    position: absolute;
+    padding-top: 231px;
+}
+.years{
+    width: 628px;
+    color: #FFF;
+    font-family: 'Gilroy';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+    padding-top: 105px;
+}
+.documents{
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    font-family: 'Gilroy';
+    font-size: 15.583px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.6;
+    height: 18px;
+    padding-top: 41px;
+    padding-bottom: 73px;
+}
+.politics{
+    margin-right: 54px;
+    cursor: pointer;
+}
+.open_information{
+    margin-right: 54px;
+    cursor: pointer;
+}
+.public_offer{
+    cursor: pointer;
+}
